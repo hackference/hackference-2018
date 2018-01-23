@@ -1,0 +1,29 @@
+/*
+
+Primary #4cc2f1
+Secondary #ffffff
+
+ */
+body {
+  background: #4cc2f1;
+  height: 100%;
+  color: #ffffff;
+  font-size: 1.8em;
+}
+a {
+  color: #ffffff;
+}
+.container {
+}
+.valign-wrapper {
+  height: 47vh;
+}
+#hackference-logo {
+  width: 100%;
+}
+#mc_embed_signup {
+  background: none;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 100%;
+}
