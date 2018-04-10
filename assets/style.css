@@ -4,26 +4,49 @@ Primary #4cc2f1
 Secondary #ffffff
 
  */
-body {
-  background: #4cc2f1;
-  height: 100%;
-  color: #ffffff;
-  font-size: 1.8em;
+
+/* Bootstrap Overrides */
+.navbar {
+  padding: 0;
+  background: #2b2d38;
 }
-a {
-  color: #ffffff;
+.nav-link {
+  padding: 1em 1em;
+  color: #fff;
 }
-.container {
+.nav-link:hover {
+  background-color: #222;
+  color: #fff;
 }
-.valign-wrapper {
-  height: 44vh;
+.nav-item {
+  padding-left: 2em;
 }
-#hackference-logo {
-  width: 100%;
+.navbar-nav {
+  padding-right: 2em;
 }
+/* Site Styling */
 #mc_embed_signup {
   background: none;
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
   width: 100%;
+}
+/* Homepage */
+#homepage-hero {
+  background: url('https://res.cloudinary.com/elsmore-me/image/upload/b_rgb:52c3ef,c_scale,e_colorize:100,h_3036,o_10,w_4048/e_grayscale,o_50,u_hackference-flag/c_crop,g_center,w_3000/v1523379435/hackference-flag.jpg');
+  background-size: cover;
+  height: 65vh;
+}
+#hero-title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero-title img {
+  width: 50em;
 }

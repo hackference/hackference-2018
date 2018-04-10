@@ -1,0 +1,3 @@
+[submodule "code-of-conduct"]
+	path = code-of-conduct
+	url = git@github.com:hackference/code-of-conduct.git
