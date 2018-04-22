@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% include css.html %}
     {% include favicons.html %}
-    <title>Hackference 2018</title>
+    <title>Hackference 2018 : {{page.title}}</title>
   </head>
   <body>
     {% include navbar.html %}
@@ -16,7 +16,9 @@
           {{ content }}
         </div>
       </div>
+      {% include sponsors.html %}
     </div>
+      {% include footer.html %}
     {% include javascript.html %}
   </body>
 </html>
