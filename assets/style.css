@@ -74,7 +74,10 @@ body {
   color: #fff;
 }
 #hero-title img {
-  width: 50em;
+  width: 70%;
+}
+#hero-title h1 {
+  font-size: 2rem;
 }
 /* Footer */
 footer .col {
