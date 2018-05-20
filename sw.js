@@ -1,4 +1,4 @@
-var CACHE_NAME = 'hackference-v1';
+var CACHE_NAME = 'hackference-v2';
 var urlsToCache = [
   // Pages
   '/',
