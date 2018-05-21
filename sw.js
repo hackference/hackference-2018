@@ -1,4 +1,4 @@
-var CACHE_NAME = 'hackference-v3';
+var CACHE_NAME = 'hackference-v4';
 var urlsToCache = [
   // Pages
   '/',
@@ -34,6 +34,11 @@ self.addEventListener('install', function(event) {
     caches.open(CACHE_NAME).then(function(cache) {
       console.log('Opened cache');
       return cache.addAll(urlsToCache);
+    })
+    .catch(function(error) {
+      console.log('--Err--');
+      console.log(error);
+      console.log('--Err--');
     })
   );
 });
