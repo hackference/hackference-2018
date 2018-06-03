@@ -5,7 +5,7 @@ var urlsToCache = [
   '/tickets',
   '/code-of-conduct/code-of-conduct.html',
   // CSS
-  '/assets/style.css',
+  '/css/style.css',
   // General Images
   '/assets/hackference-flag.jpg',
   '/assets/hackference.svg',

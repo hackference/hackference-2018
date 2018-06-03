@@ -1,35 +1,41 @@
-/*
+---
+---
 
-Primary #4cc2f1
-Secondary #ffffff
+// Required because that comment above makes scss-lint unhappy.
+.empty {}
 
- */
+// style.css converted to scss which jekyll supports OOB.
+// Imports
+@import "variables";
 
-/* Bootstrap Overrides */
+// Bootstrap Overrides
 .title {
   text-transform: uppercase;
   font-weight: 800;
 }
+
 .heading {
   display: block;
   width: 100%;
-  background: #4cc2f1;
-  color: #fff;
+  background: $primary;
+  color: $secondary;
   padding: 1em;
   margin-top: 0.5em;
 }
+
 .navbar {
   padding: 0;
-  background: #2b2d38;
-  color: #fff;
+  background: $dark-blue;
+  color: $secondary;
 }
+
 .nav-link {
   padding: 1em 1em;
-  color: #fff;
+  color: $secondary;
 }
 .nav-link:hover {
-  background-color: #222;
-  color: #fff;
+  background-color: $grey-2;
+  color: $secondary;
 }
 .nav-item {
   padding-left: 2em;
@@ -38,8 +44,10 @@ Secondary #ffffff
   padding-right: 2em;
 }
 .navbar-toggler {
-  color: #fff;
+  color: $secondary;
 }
+
+
 /* Site Styling */
 body {
   text-align: center;
@@ -56,7 +64,7 @@ body {
 }
 /* Homepage */
 #homepage-hero {
-  background-color: #;
+  //background-color: #;
   background: url('https://res.cloudinary.com/elsmore-me/image/upload/b_rgb:52c3ef,c_scale,e_colorize:100,h_3036,o_10,w_4048/e_grayscale,o_50,u_hackference-flag/c_crop,g_center,y_200,w_1800,h_530,a_vflip/hackference-flag.jpg');
   background-size: cover;
   height: 65vh;
@@ -71,7 +79,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: $secondary;
 }
 #hero-title img {
   width: 70%;
@@ -96,8 +104,8 @@ footer a {
   transition: all 300ms ease-in-out;
 }
 footer a:hover {
-  color: #4cc2f1;
-  border-bottom: 1px solid #4cc2f1;
+  color: $primary;
+  border-bottom: 1px solid $primary;
 }
 .social-links a,
 .social-links a:hover {
@@ -108,8 +116,8 @@ footer a:hover {
 .devrel-button {
   display: inline-block;
   font-weight: 700;
-  color: #222;
-  background-color: #fff;
+  color: $grey-2;
+  background-color: $secondary;
   padding: 1em 2em;
   margin-top: 2em;
   cursor: pointer;
@@ -121,11 +129,11 @@ footer a:hover {
   transition: all 300ms ease-in-out;
 }
 .buy {
-  background-color: #4cc2f1;
-  color: #fff;
+  background-color: $primary;
+  color: $secondary;
 }
 a.buy {
-  color: #fff !important;
+  color: $secondary !important;
 }
 /* Newsletter */
 label {
@@ -150,13 +158,13 @@ label {
   margin: 0.5em 0 0 0 !important;
   min-width: 100%;
   padding: 0 0 0 1em;
-  color: #222;
+  color: $grey-2;
 }
 .mc-field-group {
   margin: 0.5em 0;
 }
 #mc_embed_signup div.mce_inline_error {
-  background-color: #4cc2f1 !important;
+  background-color: $primary !important;
   text-align: left;
   padding: 15px !important;
   -webkit-animation: fadein 1s;
