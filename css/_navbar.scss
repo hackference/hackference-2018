@@ -1,0 +1,28 @@
+// Navbar overrides
+.navbar {
+  background: $navbar-bg;
+  color: $navbar-fg;
+  padding: 0;
+}
+
+.nav-link {
+  padding: $base-padding;
+  color: $navbar-fg;
+
+  &:hover {
+    background-color: $navbar-active-bg;
+    color: color-contrast($navbar-active-bg);
+  }
+}
+
+.nav-item {
+  padding-left: $base-padding * 2;
+}
+
+.navbar-nav {
+  padding-right: $base-padding * 2;
+}
+
+.navbar-toggler {
+  color: $navbar-fg;
+}

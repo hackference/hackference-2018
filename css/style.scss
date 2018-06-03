@@ -6,58 +6,21 @@
 
 // style.css converted to scss which jekyll supports OOB.
 // Imports
+@import "mixins";
 @import "variables";
-
-// Bootstrap Overrides
-.title {
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.heading {
-  display: block;
-  width: 100%;
-  background: $primary;
-  color: $secondary;
-  padding: 1em;
-  margin-top: 0.5em;
-}
-
-.navbar {
-  padding: 0;
-  background: $dark-blue;
-  color: $secondary;
-}
-
-.nav-link {
-  padding: 1em 1em;
-  color: $secondary;
-}
-.nav-link:hover {
-  background-color: $grey-2;
-  color: $secondary;
-}
-.nav-item {
-  padding-left: 2em;
-}
-.navbar-nav {
-  padding-right: 2em;
-}
-.navbar-toggler {
-  color: $secondary;
-}
+@import "reset";
+@import "typography";
+@import "navbar";
 
 
-/* Site Styling */
-body {
-  text-align: center;
-}
+// Site Styling
 #mc_embed_signup {
   background: none;
   clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
+  font: 1rem Helvetica, Arial, sans-serif;
   width: 100%;
 }
+
 #builtbyme img {
   width: 2.5em;
   height: auto;

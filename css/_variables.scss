@@ -9,5 +9,20 @@ $secondary: $white;
 
 $grey-2: #222;
 
-// Relative Sizes
+$black: #000;
+
+// Default Text colors:
+// $dark-text-default: $black;
+// $light-text-default: $white;
+
+// Sizes
 // -------------------------------------------------------------------------------------------------
+// todo: confirm em and not rem?
+$base-padding: 1em;
+
+// Navbar Colors
+// -------------------------------------------------------------------------------------------------
+$navbar-bg: $dark-blue;
+$navbar-active-bg: $grey-2;
+$navbar-fg: color-contrast($navbar-bg);
+

@@ -1,0 +1,15 @@
+// Mixins
+
+// Contrast, based on https://codepen.io/bluesaunders/details/FCLaz
+$dark-text-default: #000 !default;
+$light-text-default: #fff !default;
+
+// Compares contrast of a given color to the light/dark arguments and returns whichever is most "contrasty"
+@function color-contrast($color, $dark: $dark-text-default, $light: $light-text-default) {
+  @if $color == null {
+    @return null;
+  } @else {
+    $yiq: (red($color) * 299 + green($color) * 587 + blue($color) * 114) / 1000;
+    @return if($yiq >= 128, $dark, $light);
+  }
+}
