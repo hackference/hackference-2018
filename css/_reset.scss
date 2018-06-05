@@ -1,6 +1,15 @@
 // Global Resets
 // -------------------------------------------------------------------------------------------------
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 // Chrome and accessibility friendly REM Reset
 // Now assume 1rem = 16px
 html {
