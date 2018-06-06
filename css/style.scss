@@ -14,25 +14,60 @@
 
 
 // Site Styling
+// Mailchimp Embed Signup
 #mc_embed_signup {
   background: none;
   clear: left;
   font: 1rem Helvetica, Arial, sans-serif;
   width: 100%;
+
+  div.mce_inline_error {
+    background-color: $primary !important;
+    text-align: left;
+    padding: 15px !important;
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+  }
 }
 
-#builtbyme img {
+.mc-field-group {
+  margin: 0.5em 0;
+}
+
+div#mce-success-response {
+  background-color: $success;
+  max-width: 100%;
+  margin: 2em auto;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+#mc_embed_signup_scroll {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+// Logo
+.builtbyme img {
   width: 2.5em;
+  margin-bottom: 1rem;
   height: auto;
 }
-/* Homepage */
-#homepage-hero {
+
+// Homepage
+.homepage-hero {
   //background-color: #;
-  background: url('https://res.cloudinary.com/elsmore-me/image/upload/b_rgb:52c3ef,c_scale,e_colorize:100,h_3036,o_10,w_4048/e_grayscale,o_50,u_hackference-flag/c_crop,g_center,y_200,w_1800,h_530,a_vflip/hackference-flag.jpg');
+  background: url($hero-bg-url);
   background-size: cover;
   height: 65vh;
+  margin-bottom: 1rem;
 }
-#hero-title {
+
+.hero-title {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -43,39 +78,49 @@
   justify-content: center;
   align-items: center;
   color: $secondary;
+
+  img {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
-#hero-title img {
-  width: 70%;
+
+// Footer
+footer {
+  .col {
+    padding: 6%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  a {
+    color: $grey-9;
+    border-bottom: 1px dotted $grey-9;
+    text-decoration: none;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      color: $primary;
+      border-bottom: 1px solid $primary;
+    }
+  }
 }
-#hero-title h1 {
-  font-size: 2rem;
-}
-/* Footer */
-footer .col {
-  padding: 6%;
-}
-footer h1 {
-  font-size: 2em;
-}
-footer a {
-  color: #949393;
-  border-bottom: 1px dotted #949393;
-  text-decoration: none;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-footer a:hover {
-  color: $primary;
-  border-bottom: 1px solid $primary;
-}
+
 .social-links a,
 .social-links a:hover {
-  border-bottom: none;
+  border-bottom: 0;
   padding: 1em;
 }
-/* buttons */
+
+// Buttons
 .devrel-button {
   display: inline-block;
   font-weight: 700;
@@ -91,22 +136,26 @@ footer a:hover {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
+
 .buy {
   background-color: $primary;
   color: $secondary;
 }
+
 a.buy {
   color: $secondary !important;
 }
-/* Newsletter */
+
+// Newsletter
 label {
   display: block;
-  margin: 1em auto 0 auto;
+  margin: 1em auto 0;
   text-transform: uppercase;
   width: 100%;
   text-align: left;
-  color: #1f1f1f;
+  color: $grey-1;
 }
+
 .text {
   opacity: 0.3;
   -webkit-transition: all 300ms ease-in-out;
@@ -114,37 +163,13 @@ label {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
+
 .email,
 .text {
-  border: 1px solid #bdbdbd;
+  border: 1px solid $grey-b;
   height: 44px;
-  margin: 0.5em 0 0 0 !important;
+  margin: 0.5em 0 0 !important;
   min-width: 100%;
   padding: 0 0 0 1em;
   color: $grey-2;
-}
-.mc-field-group {
-  margin: 0.5em 0;
-}
-#mc_embed_signup div.mce_inline_error {
-  background-color: $primary !important;
-  text-align: left;
-  padding: 15px !important;
-  -webkit-animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -ms-animation: fadein 1s;
-  -o-animation: fadein 1s;
-  animation: fadein 1s;
-}
-div#mce-success-response {
-  background-color: rgb(112, 197, 112);
-  max-width: 100%;
-  margin: 2em auto;
-  padding: 15px;
-  border-radius: 5px;
-  font-weight: 400;
-}
-#mc_embed_signup_scroll {
-  max-width: 100%;
-  margin: 0 auto;
 }
