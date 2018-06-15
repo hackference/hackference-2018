@@ -1,0 +1,14 @@
+// Typography classes
+.title {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.heading {
+  display: block;
+  width: 100%;
+  margin-top: $base-padding / 2;
+  padding: $base-padding;
+  background: $primary;
+  color: $secondary;
+}
