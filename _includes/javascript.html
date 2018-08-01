@@ -8,7 +8,29 @@
 <script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
-})
+  $('#speakerDetails').on('show.bs.modal', function (event) {
+    var speakerObject = $(event.relatedTarget);
+    var speakerName = speakerObject.data('name');
+    var speakerImage = speakerObject.data('image');
+    var speakerBio = speakerObject.data('bio');
+    var speakerTalk = speakerObject.data('talk');
+    var speakerAbstract = speakerObject.data('abstract');
+    var twitterHandle = speakerObject.data('twitter');
+  
+    var modal = $(this);
+    if(twitterHandle.length) {
+      var speakerTwitter = `<a href="https://twitter.com/${twitterHandle}" >@${twitterHandle}</a>`;
+      modal.find('.modal-body .speaker-twitter').html(speakerTwitter);
+    } else {
+      modal.find('.modal-body .speaker-twitter').text('');
+    }
+    modal.find('.modal-body .speaker-name').text(speakerName);
+    modal.find('.modal-body .speaker-image').attr('src', speakerImage);
+    modal.find('.modal-body .speaker-bio').text(speakerBio);
+    modal.find('.modal-body .speaker-talk').text(speakerTalk);
+    modal.find('.modal-body .speaker-abstract').text(speakerAbstract);
+  });
+});
 </script>
 <!-- Tracking -->
 <script>
