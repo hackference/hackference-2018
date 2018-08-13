@@ -1,4 +1,4 @@
-var CACHE_NAME = 'hackference-20180812';
+var CACHE_NAME = 'hackference-20180813';
 var urlsToCache = [
   // Pages
   '/',
