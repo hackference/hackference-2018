@@ -93,6 +93,47 @@ div#mce-success-response {
   cursor: pointer;
 }
 
+// Schedule
+table.the_schedule {
+  margin: 0 auto 1em;
+  width: 90%;
+  th.sub_header {
+    background-color: #2b2c38;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    margin-top: 1em;
+    color: #fff;
+    border-top: 40px solid #fff;
+  }
+  .choose-track {
+    background-color: #4cc2f1 !important;
+  }
+  tr {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #fff;
+    width: auto;
+    td {
+      padding: 1em;
+    }
+  }
+  .time {
+    color: #4cc2f1;
+    font-weight: 700;
+  }
+  .speaker-img-container {
+    float: left;
+    max-width: 64px;
+    max-height: 64px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+    img {
+      height: 64px;
+      width: auto;
+    }
+  }
+}
+
 // Sponsor
 .sponsor {
   background: #ffffff;
