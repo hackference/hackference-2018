@@ -134,6 +134,33 @@ table.the_schedule {
   }
 }
 
+// Hackathon
+.hackathon-container {
+    background: repeating-linear-gradient( 45deg, #2b2c38, #2b2c38 5px, #272731 5px, #272731 10px );
+    color: #ffffff;
+}
+.training-box {
+    background-color: #1f1f1f;
+}
+.training-schedule-title {
+  background-color: #fff;
+  color: #232323;
+  padding: .5em 1em !important;
+}
+.training-schedule {
+  background-color: #333333;
+  list-style-type: none;
+  margin-top: 2.5em;
+  li {
+    margin-left: -2.7em;
+    padding: .5em 2em;
+    border-bottom: 2px solid #1f1f1f;
+  }
+}
+.blue {
+  color: #4cc2f1;
+}
+
 // Sponsor
 .sponsor {
   background: #ffffff;
